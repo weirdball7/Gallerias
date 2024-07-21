@@ -12,25 +12,27 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 header h1 {
-  width: 200px;
+  width: auto; /* Remove the fixed width */
+  margin-right: auto; /* Push the h1 element to the left */
   font-size: 40px;
 }
 
 header ul {
-  width: 40%;
-  margin-left: 0;
+  width: auto; /* Remove the fixed width */
+  margin-left: auto; /* Push the ul element to the right */
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 25px;
 }
 
+
 nav {
-  width: 70%;
+  width: 90%;
 }
 
 ul {
