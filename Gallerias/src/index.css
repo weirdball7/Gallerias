@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body,
 #root {
+  font-family: "Playfair Display";
   height: 100vh;
   width: 100%;
   display: flex;
@@ -7,6 +11,48 @@ body,
   justify-content: center;
   align-items: center;
 }
+
+section.options {
+  background-color: none;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+section > .card-container {
+  height: 100%;
+  width: 80%; /* Ensure it takes up the available space */
+  /* max-width: 1120px; But doesn't exceed 1120px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+
+
+.card {
+  /* font-size: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+  background-color:  rgb(240, 232, 232);
+  height: 80%;
+  width: 50%;
+  min-width: 20%;
+  border: 1px, solid, black;
+}
+
+.card > p {
+  font-size: 30px;
+} 
 
 header {
   width: 100%;
@@ -16,6 +62,7 @@ header {
 }
 
 header h1 {
+  font-family: "Edu AU VIC WA NT Hand";
   width: auto; /* Remove the fixed width */
   margin-right: auto; /* Push the h1 element to the left */
   font-size: 40px;
@@ -30,9 +77,8 @@ header ul {
   gap: 25px;
 }
 
-
 nav {
-  width: 90%;
+  width: 60%;
 }
 
 ul {
@@ -45,6 +91,7 @@ ul {
 
 li {
   list-style: none;
+  width: 30%;
 }
 
 a {
@@ -55,17 +102,117 @@ a {
 main {
   height: 100%;
   width: 100%;
-  /* display: flex;
+  gap: 10px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 section {
   width: 100%;
   height: 40%;
-  background-color: bisque;
+  /* background-color: bisque; */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero {
+  background-color: bisque;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero > h1 {
+  font-size: 50px;
+}
+
+.hero > p {
+  font-size: 30px;
+}
+
+.hero > button {
+  background-color: rgb(255, 251, 230);
+  padding: 10px;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 20px;
+}
+
+#singupButton:active {
+  background-color: white;
+}
+
+.hero > button:hover {
+  background-color: rgba(136, 136, 107, 0.452);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 768px) {
+  body, #root {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  section.options {
+    height: auto; /* Adjust height to fit content */
+  }
+
+  section > .card-container {
+    flex-direction: column;
+    width: 90%; /* Increase width for better use of space */
+    gap: 20px; /* Reduce gap to save space */
+  }
+
+  .card {
+    width: 100%; /* Full width cards for better readability */
+    height: auto; /* Adjust height to fit content */
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px; /* Add space between logo and navigation */
+  }
+
+  header h1, header ul {
+    font-size: smaller; /* Adjust font size for readability */
+    text-align: center; /* Center align for consistency */
+  }
+
+  nav, ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    gap: 10px; /* Reduce gap to save space */
+  }
+
+  li {
+    width: auto; /* Adjust width to fit content */
+  }
+
+  main {
+    gap: 20px; /* Increase gap for visual separation */
+  }
+
+  section {
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .hero {
+    width: 95%; /* Increase width for better use of space */
+  }
+
+  .hero > h1, .hero > p {
+    text-align: center; /* Ensure text is centered */
+  }
+
+  .hero > button {
+    padding: 15px; /* Increase padding for easier interaction */
+    font-size: larger; /* Increase font size for readability */
+  }
 }
