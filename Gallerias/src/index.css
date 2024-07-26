@@ -26,12 +26,16 @@ body,
   background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image in the viewport */
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+  background-attachment: fixed;
+;
   overflow: auto;
+  overflow-x: hidden;
   min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
   margin: 0;
 }
 
@@ -336,7 +340,7 @@ footer.fade-in {
 
   header {
     padding: 10px;
-    height: 10px; /* Reduce padding for mobile */
+    height: 30px; /* Reduce padding for mobile */
   }
 
   header h1 {
