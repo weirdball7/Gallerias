@@ -335,7 +335,8 @@ footer.fade-in {
   }
 
   header {
-    padding: 10px; /* Reduce padding for mobile */
+    padding: 10px;
+    height: 3px; /* Reduce padding for mobile */
   }
 
   header h1 {
