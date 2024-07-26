@@ -1,16 +1,15 @@
 import React from 'react';
 import Header from './header';
-
+import MainSection from './mainSection';
 import Footer from './footer';
-import Main from './mainSection';
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <Main></Main>
-      <Footer></Footer>
-    </>
+      <MainSection />
+      <Footer />
+    </div>
   );
 }
 
