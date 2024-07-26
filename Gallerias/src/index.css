@@ -126,6 +126,7 @@ header a:hover {
 
 .nav-menu.open {
   display: flex; /* Show when open */
+  background-color: var(--bg-color);
 }
 
 .nav-menu ul {
@@ -136,6 +137,8 @@ header a:hover {
 
 .nav-menu li {
   list-style: none;
+  border-bottom: 1px, solid, black;
+  background-color: #C05746;
 }
 
 .nav-menu a {
@@ -330,6 +333,12 @@ footer.fade-in {
     --gap: 15px;
   }
 
+  body,
+  #root {
+    padding-right: 15px;
+    align-items: center;
+  }
+
   .nav-links {
     display: none; /* Hide the default nav links */
   }
@@ -337,6 +346,8 @@ footer.fade-in {
   .hamburger {
     display: flex; /* Show the hamburger icon */
   }
+
+  
 
   header {
     padding: 10px;
