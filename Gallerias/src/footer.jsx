@@ -1,12 +1,13 @@
-function Footer(){
 
-    return(
-        <footer>
-            <hr />
-            <p>&copy; {new Date().getFullYear()} Gallerias</p>
-        </footer>
-    );
+import React from 'react';
 
-};
+function Footer() {
+  return (
+    <footer>
+      <p>&copy; {new Date().getFullYear()} Gallerias 
+        All rights reserved.</p>
+    </footer>
+  );
+}
 
 export default Footer;
