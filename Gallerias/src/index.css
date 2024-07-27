@@ -320,6 +320,54 @@ footer.fade-in {
   }
 }
 
+.form-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+}
+
+.login-container {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  background-color: var(--bg-color);
+  padding: var(--padding);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+  form{
+    background-image: url(../public/Login-background.jpg);
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image in the viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    background-color: var(--bg-color);
+    padding: var(--padding);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  
+  }
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   :root {
