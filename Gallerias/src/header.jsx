@@ -19,7 +19,7 @@ function Header() {
             <li><Link to="/exhibitions">Exhibitions</Link></li>
             <li><Link to="/artists">Artists</Link></li>
             <li><Link to="/paintings">Paintings for Sale</Link></li>
-            <li><Link to="/Signin">Sign in</Link></li>
+            <li><Link to="/signin">Sign in</Link></li> {/* Ensure the path is in lowercase */}
           </ul>
           <div className="hamburger" onClick={toggleMenu}>
             <div />
@@ -32,7 +32,7 @@ function Header() {
               <li><Link to="/exhibitions" onClick={toggleMenu}>Exhibitions</Link></li>
               <li><Link to="/artists" onClick={toggleMenu}>Artists</Link></li>
               <li><Link to="/paintings" onClick={toggleMenu}>Paintings for Sale</Link></li>
-              <li><Link to="/Signin" onClick={toggleMenu}>Sign in</Link></li>
+              <li><Link to="/signin" onClick={toggleMenu}>Sign in</Link></li> {/* Ensure the path is in lowercase */}
             </ul>
           </div>
         </nav>

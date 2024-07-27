@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react';
-
+import React, { useEffect } from 'react';
+import './index.css'; // Ensure this path is correct
 
 function Main() {
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -27,7 +26,6 @@ function Main() {
       });
     };
   }, []);
-
 
   return (
     <main>
