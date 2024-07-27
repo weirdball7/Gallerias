@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './index.css'; // Ensure this path is correct
 
 function Header() {
@@ -14,11 +15,11 @@ function Header() {
         <h1>Gallerias</h1>
         <nav>
           <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#exhibitions">Exhibitions</a></li>
-            <li><a href="#artists">Artists</a></li>
-            <li><a href="#paintings">Paintings for Sale</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/exhibitions">Exhibitions</Link></li>
+            <li><Link to="/artists">Artists</Link></li>
+            <li><Link to="/paintings">Paintings for Sale</Link></li>
+            <li><Link to="/Signin">Sign in</Link></li>
           </ul>
           <div className="hamburger" onClick={toggleMenu}>
             <div />
@@ -27,11 +28,11 @@ function Header() {
           </div>
           <div className={`nav-menu ${menuOpen ? 'open' : ''}`}>
             <ul>
-              <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-              <li><a href="#exhibitions" onClick={toggleMenu}>Exhibitions</a></li>
-              <li><a href="#artists" onClick={toggleMenu}>Artists</a></li>
-              <li><a href="#paintings" onClick={toggleMenu}>Paintings for Sale</a></li>
-              <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
+              <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+              <li><Link to="/exhibitions" onClick={toggleMenu}>Exhibitions</Link></li>
+              <li><Link to="/artists" onClick={toggleMenu}>Artists</Link></li>
+              <li><Link to="/paintings" onClick={toggleMenu}>Paintings for Sale</Link></li>
+              <li><Link to="/Signin" onClick={toggleMenu}>Sign in</Link></li>
             </ul>
           </div>
         </nav>
