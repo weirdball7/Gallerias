@@ -18,7 +18,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 50%;
     height: 800px;
     max-width: 400px;
   }
@@ -58,8 +58,11 @@
   /* Responsive design */
   @media (max-width: 600px) {
     .signin-form {
+      height: 680px;
       padding: 15px;
+      width: 100%;
       max-width: 100%;
+      
     }
   
     .form-container input {
