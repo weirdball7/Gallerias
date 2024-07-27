@@ -1,19 +1,30 @@
+// src/pages/SigninSignup.js
 import React from 'react';
+import { Container, Form, Button } from 'react-bootstrap';
 import '../SigninSignup.css';
 
 function SigninSignup() {
   return (
     <div className="signin-container">
-      <form className="signin-form">
-        <div className="form-container">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Enter Email" />
+      <Container className="d-flex justify-content-center align-items-center vh-100">
+        <Form className="signin-form">
+          <div className="form-container">
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+            </Form.Group>
 
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" placeholder="Enter Password" />
-        </div>
-        <button type="submit" className="signin-button">Sign In</button>
-      </form>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+
+            <Button variant="primary" type="submit" className="signin-button w-100">
+              Sign In
+            </Button>
+          </div>
+        </Form>
+      </Container>
     </div>
   );
 }
