@@ -46,24 +46,28 @@ function Main() {
             <div className="cardDescription">
               <h1>Exhibitions</h1>
               <p>Discover a world of art through our curated exhibitions. From contemporary masterpieces to classic collections, find the perfect art experience tailored to your interests.</p>
+              <button>View Exhibitions</button>
             </div>
           </div>
           <div className="card">
             <div className="cardDescription">
               <h1>Artists</h1>
               <p>Meet the artists behind your favorite pieces. Learn about their inspirations, techniques, and stories that bring their art to life. Get to know the creative minds shaping the art world.</p>
+              <button>View Artists</button>
             </div>
           </div>
           <div className="card">
             <div className="cardDescription">
               <h1>Paintings for Sale</h1>
               <p>Bring beauty and inspiration into your space with our selection of paintings for sale. Browse through a diverse range of styles and find a piece that speaks to you and complements your environment.</p>
+              <button>View Paintings</button>
             </div>
           </div>
           <div className="card">
             <div className="cardDescription">
               <h1>Connecting Galleries & Artists</h1>
               <p>Facilitating seamless connections between galleries and artists, Gallerias provides a platform where art professionals can collaborate, share opportunities, and grow their networks within the art community.</p>
+              <button>Apply for an exhibition</button>
             </div>
           </div>
         </div>
