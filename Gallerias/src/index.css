@@ -131,7 +131,7 @@ header a:hover {
 .nav-menu li {
   list-style: none;
   border-bottom: 1px solid black;
-  background-color: #C05746;
+  /* background-color: #C05746; */
 }
 
 .nav-menu a {
@@ -233,6 +233,23 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.card > button {
+  height: 50px;
+  width: 100px;
+  color: black;
+  background-color: var(--btn-bg-color);
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+}
+
+button{
+  
 }
 
 .card.fade-in {

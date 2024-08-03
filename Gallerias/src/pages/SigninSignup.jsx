@@ -13,6 +13,7 @@ function SigninSignup() {
           <label htmlFor="password">Password</label>
           <input type="password" id="password" placeholder="Enter Password" />
           <p>forgot password? <a href="#">Click me!</a></p>
+          <p>Dont have an acoount? <a href="#">Sign up!</a></p>
           <button type="submit" className="signin-button">Sign In</button>
         </div>
       </form>
