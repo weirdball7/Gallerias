@@ -1,4 +1,7 @@
 # Logs
+
+*.msi
+
 logs
 *.log
 npm-debug.log*
