@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+
+body,
+#root {
+  overflow: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.signin-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 90%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  height: 50%;
+  background-color: #c05646c0;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+input {
+  border: none;
+  height: 35px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: 2px solid #2672ff;
+}
+
+label {
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: rgb(38, 114, 255);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-container > h1{
+  font-family: 'Edu AU VIC WA NT Hand', cursive;
+  /* font-size: 40px; */
+}
+
+button:hover {
+  background-color: rgb(30, 90, 200);
+}
+
+button:active {
+  background-color: rgb(25, 75, 175);
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 80%;
+    height: 60%;
+    padding: 20px;
+  }
+
+  input {
+    height: 30px;
+    width: 180px;
+    font-size: 16px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  button {
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    height: 70%;
+    padding: 10px;
+  }
+
+  input {
+    height: 25px;
+    width: 150px;
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  button {
+    height: 30px;
+    width: 90px;
+    font-size: 14px;
+  }
+}

@@ -1,7 +1,10 @@
 # Logs
+<<<<<<< HEAD
 
 *.msi
 
+=======
+>>>>>>> fd7aacf4c6debc85c53ead39c87c2c15586b10f9
 logs
 *.log
 npm-debug.log*
